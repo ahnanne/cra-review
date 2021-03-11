@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 이 프로젝트는 [Create React App](https://github.com/facebook/create-react-app)으로 부트 스트랩 되었습니다.
 
 
@@ -52,7 +51,5 @@ React를 배우려면 공식 [React documentation](https://reactjs.org/)을 확�
 - [고급 환경 구성](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 - [배포](https://facebook.github.io/create-react-app/docs/deployment)
 - [`npm run build` 명령이 실패 할 경우](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# cra-review
-FDS-18 CRA 수업 실습 및 복습을 위한 저장공간입니다.
->>>>>>> d4f9d9279ab98baa79ed2d675bbcd2672c9e3f6b
+
+
