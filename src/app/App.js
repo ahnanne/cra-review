@@ -1,6 +1,6 @@
 import './App.scss';
-import UploadButton from '../components/UploadButton/UploadButton';
-import buttonDatas from '../data/button.json';
+import UploadButton from 'components/UploadButton/UploadButton';
+import buttonDatas from 'data/button.json';
 
 function App() {
   const buttons = buttonDatas.data;

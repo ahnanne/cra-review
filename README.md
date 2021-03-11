@@ -51,5 +51,3 @@ React를 배우려면 공식 [React documentation](https://reactjs.org/)을 확�
 - [고급 환경 구성](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 - [배포](https://facebook.github.io/create-react-app/docs/deployment)
 - [`npm run build` 명령이 실패 할 경우](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-

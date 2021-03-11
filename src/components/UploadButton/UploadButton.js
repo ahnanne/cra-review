@@ -1,12 +1,12 @@
 import React from 'react';
 import './UploadButton.scss';
-import SVGIcon from '../SVGIcon/SVGIcon';
-import Button from '../Button/Button';
-import getPublicURL from '../../utils/getPublicURL';
+import SVGIcon from 'components/SVGIcon/SVGIcon';
+import Button from 'components/Button/Button';
+import getPublicURL from 'utils/getPublicURL';
 
 
 export default function UploadButton({ buttonData, children }) {
-  const { state, content, icon } = buttonData;
+  const { state, icon } = buttonData;
   return (
     <>
     <Button state={state}>
