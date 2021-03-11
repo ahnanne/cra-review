@@ -1,0 +1,33 @@
+{
+  "data": [{
+    "id": "button-1",
+    "type": "button",
+    "state": "idle",
+    "icon": "up-arrow",
+    "content": "업로드"
+  }, {
+    "id": "button-2",
+    "type": "button",
+    "state": "pending",
+    "icon": "spinner",
+    "content": "업로드 중"
+  }, {
+    "id": "button-3",
+    "type": "button",
+    "state": "resolved",
+    "icon": "check-mark",
+    "content": "완료"
+  }, {
+    "id": "button-4",
+    "type": "button",
+    "state": "rejected",
+    "icon": "cross",
+    "content": "실패"
+  }, {
+    "id": "button-5",
+    "type": "button",
+    "state": "disabled",
+    "icon": "not-allowed",
+    "content": "업로드"
+  }]
+}

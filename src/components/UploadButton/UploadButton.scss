@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  background: #ffe4fd;
+}
+
+#root {
+  min-height: 80vh;
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.button {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  min-width: 5.5625rem;
+  border: 0;
+  border-radius: 3rem;
+  padding: 0.75em 1em;
+  font: bold 0.75rem/1 SpoqaHanSans;
+  background: #ffffff;
+  color: #525577;
+  transition: all 0.58s cubic-bezier(0.77, 0, 0.18, 1);
+  box-shadow: 0 4px 4px #dbddf0;
+
+  &:hover {
+    transform: scale(1.2);
+    box-shadow: 0 9px 6px #dbddf0;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(147, 153, 210, 0.56);
+
+    &:not(:focus-visible) {
+      box-shadow: none;
+    }
+  }
+
+  &[disabled] {
+    cursor: not-allowed;
+    color: #adaeb6;
+
+    &:hover {
+      transform: none;
+      box-shadow: 0 4px 4px #dbddf0;
+    }
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

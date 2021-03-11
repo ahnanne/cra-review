@@ -1,24 +1,16 @@
-import './App.scss'
-import logo from 'assets/logo.svg'
+import './App.scss';
+import UploadButton from '../components/UploadButton/UploadButton';
+import buttonDatas from '../data/button.json';
 
 function App() {
+  const buttons = buttonDatas.data;
+  console.log(buttons[0]["content"]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          <code>src/App.js</code> 문서를 수정하면 실시간 업데이트 됩니다
-        </p>
-        <a
-          className="App-link"
-          href="https://ko.reactjs.org"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          React를 배워보세요
-        </a>
-      </header>
-    </div>
+    <>
+      {buttons.map((button) => (
+        <UploadButton key={button.id} buttonData={button}>{button.content}</UploadButton>
+      ))}
+    </>
   )
 }
 
