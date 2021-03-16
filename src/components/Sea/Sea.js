@@ -2,6 +2,9 @@ import { Component, createContext } from 'react';
 import Boat from '../Boat/Boat';
 import { sea, button, span } from './Sea.module.scss';
 
+// context를 만들어보자!
+export const WeatherContext = createContext(null);
+
 export default class Sea extends Component {
   constructor(props) {
     super(props);
@@ -22,13 +25,13 @@ export default class Sea extends Component {
     const { weather } = this.state;
 
     return (
-      <>
+      <WeatherContext.Provider value={weather}>
         <div className={sea}>
-          <Boat weather={weather} />
+          <Boat />
         </div>
         <button className={button} type="button" onClick={this.changeWeather}>날씨 바꾸기!</button>
         <span className={span}>현재 날씨: {weather}</span>
-      </>
+      </WeatherContext.Provider>
     );
   }
 }
