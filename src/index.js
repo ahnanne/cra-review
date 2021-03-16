@@ -4,11 +4,11 @@ import { StrictMode } from 'react'
 import { render } from 'react-dom'
 import './styles/index.scss'
 
-import App from './app/App'
+import Sea from './components/Sea/Sea';
 
 render(
   <StrictMode>
-    <App />
+    <Sea />
   </StrictMode>,
   document.getElementById('root')
 )

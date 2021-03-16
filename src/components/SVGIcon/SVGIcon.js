@@ -1,10 +1,19 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 
 export default function SVGIcon({ src, ...restProps }) {
-  console.log(restProps);
   return (
     <img src={`${src}.svg`} alt="" {...restProps} />
   );
+}
+
+SVGIcon.defaultProps = {
+  alt: '',
+};
+
+SVGIcon.propTypes = {
+  src: PropTypes.string.isRequired,
+  alt: PropTypes.string,
 }
 
 /*
